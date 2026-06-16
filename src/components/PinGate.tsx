@@ -47,7 +47,7 @@ export function PinGate({ children }: { children: ReactNode }) {
         <PrayerFlags className="mb-6 -mt-2" count={10} />
 
         <p className="font-script text-2xl text-primary">our private corner</p>
-        <h1 className="font-display text-4xl mt-1 mb-2">Our Nepal Story</h1>
+        <h1 className="font-display text-4xl mt-1 mb-2">Us Together.. K and A</h1>
         <p className="text-muted-foreground font-script text-base mb-8">
           Enter the pin to step inside
         </p>

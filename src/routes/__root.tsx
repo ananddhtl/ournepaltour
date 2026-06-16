@@ -61,11 +61,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Our Nepal Story" },
-      { name: "description", content: "A private shared journal for our two-month adventure across Nepal." },
+      { title: "Us Together.. K and A" },
+      { name: "description", content: "A private shared space for K and A — two months across Nepal." },
       { name: "theme-color", content: "#C0614A" },
-      { property: "og:title", content: "Our Nepal Story" },
-      { property: "og:description", content: "A love letter, in days." },
+      { property: "og:title", content: "Us Together.. K and A" },
+      { property: "og:description", content: "K and A — a love letter, in days." },
       { property: "og:type", content: "website" },
     ],
     links: [

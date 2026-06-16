@@ -14,7 +14,7 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/memories")({
   head: () => ({
     meta: [
-      { title: "Memories — Our Nepal Story" },
+      { title: "Memories — Us Together.. K and A" },
       { name: "description", content: "Our private gallery of moments together in Nepal." },
     ],
   }),

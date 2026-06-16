@@ -10,7 +10,7 @@ import { Sparkles, Send } from "lucide-react";
 export const Route = createFileRoute("/date-ideas")({
   head: () => ({
     meta: [
-      { title: "Date Ideas — Our Nepal Story" },
+      { title: "Date Ideas — Us Together.. K and A" },
       { name: "description", content: "Tell us the vibe, and we'll find the perfect moment in Nepal." },
     ],
   }),

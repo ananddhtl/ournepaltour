@@ -6,7 +6,7 @@ import { PrayerFlags } from "@/components/PrayerFlags";
 export const Route = createFileRoute("/map")({
   head: () => ({
     meta: [
-      { title: "Map — Our Nepal Story" },
+      { title: "Map — Us Together.. K and A" },
       { name: "description", content: "Every pin a moment, every line a memory." },
     ],
   }),

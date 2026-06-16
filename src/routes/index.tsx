@@ -7,8 +7,8 @@ import { CalendarDays, Sparkles, Image as ImageIcon, MapPin, Plus } from "lucide
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Home — Our Nepal Story" },
-      { name: "description", content: "Countdown, love note, and what's next on our Nepal journey." },
+      { title: "Home — Us Together.. K and A" },
+      { name: "description", content: "Countdown, love note, and what's next for K and A." },
     ],
   }),
   component: HomePage,
@@ -46,9 +46,9 @@ function HomePage() {
 
       <header className="text-center mb-10">
         <p className="font-script text-2xl text-primary">welcome to</p>
-        <h1 className="font-display text-5xl md:text-6xl mt-1">Our Nepal Story</h1>
+        <h1 className="font-display text-5xl md:text-6xl mt-1">Us Together.. K and A</h1>
         <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-          A private place for us — two months of mountains, lakes, prayer flags, and small moments
+          A private place for K and A — two months of mountains, lakes, prayer flags, and small moments
           we'll want to remember forever.
         </p>
       </header>
