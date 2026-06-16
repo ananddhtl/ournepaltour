@@ -197,8 +197,8 @@ const __iconNode = [
 ];
 const X = createLucideIcon("x", __iconNode);
 export {
-  CalendarRange as C,
-  Heart as H,
+  CalendarDays as C,
+  House as H,
   Image as I,
   List as L,
   MapPin as M,
@@ -206,11 +206,11 @@ export {
   Sparkles as S,
   Trash2 as T,
   X,
-  Check as a,
-  ChevronDown as b,
-  ChevronUp as c,
-  Send as d,
-  CalendarDays as e,
-  House as f,
-  Minus as g
+  Minus as a,
+  CalendarRange as b,
+  Check as c,
+  Heart as d,
+  ChevronDown as e,
+  ChevronUp as f,
+  Send as g
 };

@@ -1,5 +1,5 @@
 import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
-import { u as useApp, P as PrayerFlags } from "./router-BQi69zSD.mjs";
+import { u as useApp, P as PrayerFlags } from "./router-Duow2dwg.mjs";
 import "../_libs/sonner.mjs";
 import "../_libs/input-otp.mjs";
 import "../_libs/tanstack__query-core.mjs";

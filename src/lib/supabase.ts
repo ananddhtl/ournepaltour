@@ -1,12 +1,18 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Node.js < 22 has no native WebSocket. Polyfill it for SSR only so that
-// Supabase's realtime client can initialize. The `import.meta.env.SSR` guard
-// tells Vite to strip this block from the browser bundle entirely.
+// Node.js < 22 has no native WebSocket. Supabase's realtime client checks for
+// it during createClient() even if realtime is never used. Provide a no-op
+// class synchronously so the check passes without any actual connections.
+// `import.meta.env.SSR` tells Vite to strip this block from the browser bundle.
 if (import.meta.env.SSR && typeof globalThis.WebSocket === "undefined") {
-  const { default: ws } = await import("ws");
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (globalThis as any).WebSocket = ws;
+  (globalThis as any).WebSocket = class {
+    static CONNECTING = 0; static OPEN = 1; static CLOSING = 2; static CLOSED = 3;
+    readyState = 3;
+    constructor(_url: string) {}
+    close() {} send() {}
+    addEventListener() {} removeEventListener() {} dispatchEvent() { return false; }
+  };
 }
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;

@@ -9,7 +9,7 @@ import { c as clsx } from "../_libs/clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { s as streamText, c as convertToModelMessages } from "../_libs/ai.mjs";
 import { c as createOpenAICompatible } from "../_libs/ai-sdk__openai-compatible.mjs";
-import { f as House, e as CalendarDays, I as Image, S as Sparkles, M as MapPin, g as Minus } from "../_libs/lucide-react.mjs";
+import { H as House, C as CalendarDays, I as Image, S as Sparkles, M as MapPin, a as Minus } from "../_libs/lucide-react.mjs";
 import "../_libs/tanstack__router-core.mjs";
 import "../_libs/tanstack__history.mjs";
 import "../_libs/cookie-es.mjs";
@@ -41,7 +41,7 @@ import "path";
 import "fs";
 import "os";
 import "../_libs/opentelemetry__api.mjs";
-const appCss = "/assets/styles-CrsFP1dM.css";
+const appCss = "/assets/styles-CzLlWnty.css";
 function reportLovableError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__lovableEvents?.captureException?.(
@@ -59,8 +59,26 @@ function reportLovableError(error, context = {}) {
   );
 }
 if (typeof globalThis.WebSocket === "undefined") {
-  const { default: ws } = await import("../_libs/ws.mjs");
-  globalThis.WebSocket = ws;
+  globalThis.WebSocket = class {
+    static CONNECTING = 0;
+    static OPEN = 1;
+    static CLOSING = 2;
+    static CLOSED = 3;
+    readyState = 3;
+    constructor(_url) {
+    }
+    close() {
+    }
+    send() {
+    }
+    addEventListener() {
+    }
+    removeEventListener() {
+    }
+    dispatchEvent() {
+      return false;
+    }
+  };
 }
 const supabaseUrl = "https://mrqpjoitzokbadnzwwka.supabase.co";
 const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1ycXBqb2l0em9rYmFkbnp3d2thIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1MzM3MDgsImV4cCI6MjA5NzEwOTcwOH0.tTUHPvFJ3qcoGss96tlsOVZZiA7xKaJr6dZJlEu4j2Y";
@@ -539,7 +557,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Toaster, {})
   ] }) }) });
 }
-const $$splitComponentImporter$4 = () => import("./plan-3I3Ac8gK.mjs");
+const $$splitComponentImporter$4 = () => import("./plan-Dk-i_g-Y.mjs");
 const Route$5 = createFileRoute("/plan")({
   head: () => ({
     meta: [{
@@ -554,7 +572,7 @@ const Route$5 = createFileRoute("/plan")({
 const TRIP_START = /* @__PURE__ */ new Date("2026-06-28");
 const TRIP_END = new Date(TRIP_START);
 TRIP_END.setDate(TRIP_END.getDate() + 62);
-const $$splitComponentImporter$3 = () => import("./memories-CHjSwOMo.mjs");
+const $$splitComponentImporter$3 = () => import("./memories-DYGMdHDM.mjs");
 const Route$4 = createFileRoute("/memories")({
   head: () => ({
     meta: [{
@@ -566,7 +584,7 @@ const Route$4 = createFileRoute("/memories")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-const $$splitComponentImporter$2 = () => import("./map-Bf8Zl3fd.mjs");
+const $$splitComponentImporter$2 = () => import("./map-oRFw9OqU.mjs");
 const Route$3 = createFileRoute("/map")({
   head: () => ({
     meta: [{
@@ -578,7 +596,7 @@ const Route$3 = createFileRoute("/map")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-const $$splitComponentImporter$1 = () => import("./date-ideas-WapdgRmD.mjs");
+const $$splitComponentImporter$1 = () => import("./date-ideas-Bsx6fKQ_.mjs");
 const Route$2 = createFileRoute("/date-ideas")({
   head: () => ({
     meta: [{
@@ -590,7 +608,7 @@ const Route$2 = createFileRoute("/date-ideas")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./index-oaQoIK4k.mjs");
+const $$splitComponentImporter = () => import("./index-47p_nyIn.mjs");
 const Route$1 = createFileRoute("/")({
   head: () => ({
     meta: [{
